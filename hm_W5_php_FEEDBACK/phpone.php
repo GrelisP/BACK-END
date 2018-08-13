@@ -1,10 +1,11 @@
 <?php
-$name=$_POST['name'];
-$email=$_POST['email'];
-$feedback=$_POST['feedback'];
-$num1=$_POST['num1'];
-$num2=$_POST['num2'];
+$name=isset($_POST['name'])? $_POST['name']:'';
+$email=isset($_POST['email'])? $_POST['email']:'';
+$feedback=isset($_POST['feedback'])? $_POST['feedback']:'';
+$num1=isset($_POST['num1'])? $_POST['num1']:'';
+$num2=isset($_POST['num2'])? $_POST['num2']:'';
 $sum;
+
 
 /*
 if ( strlen ( $name ) > 0 ){
